@@ -24,7 +24,7 @@ const Detail=()=>{
 
  const getuser=async()=>{
 
-  const res=await fetch(`/view/${id}`,{
+   const res = await fetch(`https://reactcrudapi.onrender.com/view/${id}`,{
     method:"GET",
     headers:{
       "Content-Type":"application/json"
@@ -48,7 +48,7 @@ const Detail=()=>{
  }
 
  const deleteuser = async (id) => {
-  const res2 = await fetch(`/deleteuser/${id}`, {
+   const res2 = await fetch(`https://reactcrudapi.onrender.com/deleteuser/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json"
@@ -78,7 +78,7 @@ const Detail=()=>{
    <Card variant="outlined" sx={{maxWidth:600}}>
     <CardContent>
     <div className="add_btn ">
-      <Link to={`/edit/${getUserdata._id}`} className="btn btn-outline-primary mx-2"><i className="fa-regular fa-pen-to-square"></i></Link>
+           <Link to={`https://reactcrudapi.onrender.com/edit/${getUserdata._id}`} className="btn btn-outline-primary mx-2"><i className="fa-regular fa-pen-to-square"></i></Link>
       <button type="button" onClick={()=>{deleteuser(getUserdata._id)}}  className="btn btn-outline-danger"><i className="fa-solid fa-circle-minus"></i></button>
       </div>
 

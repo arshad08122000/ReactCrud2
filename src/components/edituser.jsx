@@ -31,7 +31,7 @@ const Edit=()=>{
 
  const getuser=async()=>{
 
-  const res=await fetch(`/view/${id}`,{
+   const res = await fetch(`https://reactcrudapi.onrender.com/view/${id}`,{
     method:"GET",
     headers:{
       "Content-Type":"application/json"
@@ -60,7 +60,7 @@ const Edit=()=>{
   e.preventDefault();
 
   const {name,email,work,address,mobile,desc,age}=inpval;
-  const res2=await fetch(`/updateuser/${id}`,{
+   const res2 = await fetch(`https://reactcrudapi.onrender.com/updateuser/${id}`,{
     method:"PATCH",
     headers:{
       "Content-Type":"application/json"

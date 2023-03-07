@@ -30,7 +30,7 @@ const Register=()=>{
    e.preventDefault();
    const {name,email,work,address,mobile,desc,age}=inpval;
 
-   const res=await fetch("/Add",{
+   const res=await fetch("https://reactcrudapi.onrender.com/Add",{
      method:"POST",
      headers:{
        "Content-Type":"application/json"
