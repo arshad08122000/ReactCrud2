@@ -129,8 +129,8 @@ const Alluser = () => {
           <td>{element.age}</td>
           <td>{element.mobile}</td>
           <td className="d-flex justify-content-between mx-0">
-          <Link to={`https://reactcrudapi.onrender.com/edit/${element._id}`} className="btn btn-outline-primary mx-0"><i className="fa-regular fa-pen-to-square"></i></Link>
-          <Link to={`https://reactcrudapi.onrender.com/view/${element._id}`} className="btn btn-outline-secondary mx-0"><i className="fa-regular fa-eye"></i></Link>
+          <Link to={`/edit/${element._id}`} className="btn btn-outline-primary mx-0"><i className="fa-regular fa-pen-to-square"></i></Link>
+          <Link to={`/view/${element._id}`} className="btn btn-outline-secondary mx-0"><i className="fa-regular fa-eye"></i></Link>
           <button type="button" onClick={()=>{deleteuser(element._id)}}  className="btn btn-outline-danger"><i className="fa-solid fa-circle-minus"></i></button>
            </td>
         </tr>
